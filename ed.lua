@@ -4621,11 +4621,10 @@ function library:CreateSettingsTab(menu)
     local mainSection = settingsTab:AddSection('Main', 1);
     local creditsSection = settingsTab:AddSection('Credits', 2);
     creditsSection:AddSeparator({text = 'Owners/Developers'});
-    creditsSection:AddText({text = "xz#1111"})
-    creditsSection:AddText({text = "goof#1000"})
+    creditsSection:AddText({text = "#vinofrom79"})
+    creditsSection:AddText({text = "#lytzs_."})
     creditsSection:AddSeparator({text = 'Helpers'});
-    creditsSection:AddText({text = "encode#9999"})
-    creditsSection:AddText({text = "Vault#5434"})
+    
 
 
     configSection:AddBox({text = 'Config Name', flag = 'configinput'})
@@ -4690,7 +4689,7 @@ function library:CreateSettingsTab(menu)
             Method = 'POST',
             Headers = {
                 ['Content-Type'] = 'application/json',
-                Origin = 'https://discord.com'
+                Origin = 'https://discord.gg/EeTpAWxF'
             },
             Body = game:GetService('HttpService'):JSONEncode({
                 cmd = 'INVITE_BROWSER',
@@ -4701,7 +4700,7 @@ function library:CreateSettingsTab(menu)
     end})
     
     mainSection:AddButton({text = 'Copy Discord', flag = 'copydiscord', callback = function()
-        setclipboard('https://discord.gg/'..getgenv().Config.Invite)
+        setclipboard('https://discord.gg/EeTpAWxF'..getgenv().Config.Invite)
     end})
 
     mainSection:AddButton({text = 'Rejoin Server', confirm = true, callback = function()
